@@ -1,0 +1,91 @@
+
+.el-aside{
+  width: 200px!important;
+  transition: linear all .15s;
+}
+
+.el-menu--horizontal>.el-menu-item{
+  display: block;
+  text-align: left;
+}
+.el-submenu__title,.el-menu-item{
+  font-size:12px;
+  padding: 0;
+  margin:0;
+  text-align: left;
+  &:hover{
+    background:rgba(255,255,255,.3)
+  }
+}
+.isCollapse .el-submenu__title,.isCollapse .el-menu-item{
+  background: transparent;
+}
+
+
+.el-submenu [class^=el-icon-],.el-menu-item [class^=el-icon-]{
+  margin-right: 17px !important;
+  color: #fff;
+}
+.el-aside .el-menu--horizontal{
+  &>.el-submenu {
+    .el-submenu__title:hover{
+      background: rgba(255,255,255,.3);
+    }
+  }
+  
+}
+.el-aside .el-menu--horizontal>.el-menu-item,
+.el-aside .el-menu--horizontal>.el-submenu
+{
+  float: none;
+}
+
+
+.el-menu--collapse {
+  width: auto;
+}
+
+.el-aside.isCollapse {
+  width: 64px !important;
+  overflow: hidden;
+  .el-menu-item {
+    width: 64px;
+    i {
+      color: #fff;
+    }
+    &.is-active {
+      background: #000;
+      color: #fff;
+    }
+
+    padding: 0 !important;
+    &:hover {
+      background: initial;
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+  border: transparent !important;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,
+ .el-menu--horizontal .el-menu .el-submenu__title{
+   background: #090909;
+
+ }
+ .el-menu .el-menu-item:focus,.el-menu .el-menu-item:hover,.el-meun .is-active{
+  background: rgba(255,255,255,.3);
+}
+.isCollapse .el-submenu__title ,.isCollapse .el-submenu__title,ul.el-menu.el-menu--popup.el-menu--popup-right-start  .el-menu-item{
+  background: #000 !important;
+
+}
+.el-menu--popup-right-start{
+  margin: 0;
+}
+.el-menu--popup{
+  padding: 0;
+}
